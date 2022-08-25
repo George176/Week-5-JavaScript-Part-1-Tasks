@@ -1,0 +1,15 @@
+/* The variable Kevlin is what is measured*/
+
+const Kelvin = 293;
+
+/*Converting Kelvin to Celsius*/
+
+const Celsius = Kelvin - 273;
+
+/*Converting Celsius to Farenheit and rounding using Math.floor()*/
+
+const Farenheit = Math.floor(Celsius * (9 / 5) + 32);
+
+console.log(`The temperature is ${Farenheit} degrees Farenheit.`);
+
+/*0 Kelvin in Farenheit is -460 degrees Farenheit*/

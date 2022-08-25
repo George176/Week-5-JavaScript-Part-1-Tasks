@@ -1,0 +1,32 @@
+/* 1) Assigning the variable raceNumber a random number between 0 and 999*/
+
+let raceNumber = Math.floor(Math.random() * 1000);
+
+/* 2) Setting the Boolean variable earlyRegistration to true*/
+
+const earlyRegistration = true;
+
+/* 3) Creating a variable for the runner’s age*/
+
+const runnerAge = 19;
+
+/* 4) If runner is aged 18 or over AND registered early then add 1000 to runner’s race number*/
+
+if (runnerAge >= 18 && earlyRegistration) {
+
+  raceNumber = raceNumber + 1000
+};
+
+/* 5) Creating a separate control flow statement that checks if runner is aged 18 or over and if runner registered early. If both conditions are true then the console will tell the runner that they will race at 09:30 am. Console also shows the runner’s race number.*/
+
+/* if (runnerAge>18 && earlyRegistration){console.log(`You will race at 09:30 am. Your race number is ${raceNumber}.`)};*/
+
+/* 6) */
+
+if (runnerAge > 18 && earlyRegistration) { console.log(`You will race at 09:30 am. Your race number is ${raceNumber}.`) } else if (runnerAge >= 18 && earlyRegistration !== true) { console.log(`You will run at 11:00 am. Your race number is ${raceNumber}.`) };
+
+/* if (runnerAge<18){console.log(`You are under 18. You will run at 12:30 pm. Your race number is ${raceNumber}.`)}; */
+
+/* 8) */
+
+if (runnerAge < 18) { console.log(`You are under 18. You will run at 12:30 pm. Your race number is ${raceNumber}.`) } else if (runnerAge == 18) { console.log(`You are 18 years old. Please see the registration desk.`) };
